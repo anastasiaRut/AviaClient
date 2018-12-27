@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="373.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.FlightClassesController">
+    <children>
+        <TableView fx:id="tableFlightClasses" editable="true" layoutX="93.0" layoutY="7.0" prefHeight="317.0"
+                   prefWidth="492.0" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="codeColumn" onEditCommit="#editCommitFlightClassCode" prefWidth="75.0"
+                             sortable="false" text="Международный код"/>
+                <TableColumn fx:id="nameColumn" onEditCommit="#editCommitFlightClassName" prefWidth="75.0"
+                             text="Название"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="saveButton" layoutX="11.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#saveAction"
+                prefHeight="29.0" prefWidth="74.0" text="Сохранить"/>
+        <Button fx:id="deleteButton" layoutX="11.0" layoutY="274.0" mnemonicParsing="false"
+                onMouseClicked="#deleteAction" prefHeight="25.0" prefWidth="74.0" text="Удалить"/>
+        <Button fx:id="back" layoutX="11.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#back"
+                prefHeight="43.0" prefWidth="74.0" text="Назад в меню" wrapText="true"/>
+        <Slider layoutX="579.0" layoutY="27.0" orientation="VERTICAL" prefHeight="296.0" prefWidth="14.0"/>
+        <Label fx:id="label" layoutX="325.0" layoutY="334.0"/>
+    </children>
+</AnchorPane>
+

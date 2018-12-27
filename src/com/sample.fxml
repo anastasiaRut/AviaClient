@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controller">
+    <children>
+        <TextField fx:id="login" layoutX="241.0" layoutY="166.0" opacity="0.62" prefHeight="34.0" prefWidth="202.0" promptText="логин">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <font>
+                <Font name="Cambria Bold" size="15.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="48.0" fitWidth="63.0" layoutX="638.0" layoutY="14.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@кнопка.png" />
+            </image>
+            <effect>
+                <Bloom />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="568.0" layoutY="14.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@свернуть.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="buttonRegistration" layoutX="279.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#buttonRegistration" opacity="0.69" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: gray;" text="Регистрация" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="buttonHide" layoutX="566.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#buttonHide" opacity="0.0" prefHeight="41.0" prefWidth="52.0" text="Свернуть">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button fx:id="closeButton" layoutX="638.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#closeButton" opacity="0.0" prefHeight="41.0" prefWidth="48.0" text="Закрыть">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Label fx:id="labelRegistration" layoutX="253.0" layoutY="261.0" prefHeight="17.0" prefWidth="182.0" textAlignment="CENTER">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="authoButton" layoutX="280.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#authorization" opacity="0.69" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: gray;" text="Авторизация" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <PasswordField fx:id="password" layoutX="241.0" layoutY="219.0" opacity="0.62" prefHeight="34.0" prefWidth="202.0" promptText="пароль">
+            <font>
+                <Font name="Cambria Bold" size="15.0" />
+            </font>
+        </PasswordField>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</AnchorPane>
